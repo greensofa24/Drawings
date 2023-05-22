@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snowman</title>
+</head>
+<body>
+
+<h1>Very simple but I'm proud</h1>
+
+<canvas id="a" width="150" height="200"></canvas>
+<script>
+a = document.getElementById("a");
+context = a.getContext("2d");
+context.fillStyle = "white";
+context.beginPath();
+context.arc(55, 130, 40, 0, 2*Math.PI);
+context.stroke();
+context.lineWidth = 2;
+context.beginPath();
+context.arc(55, 71, 30, 0, 2*Math.PI);
+context.stroke();
+context.lineWidth = 2.2;
+context.fill();
+context.beginPath();
+context.arc(55, 30, 20, 0, 2*Math.PI);
+context.stroke();
+context.fill();
+</script>
+<br>
+<button onclick="document.querySelector('pre').style.display = 'block';">View code to see how hard it is to draw a snowman</button>
+<pre style="display:none;">
+&lt;canvas id="a" width="150" height="200"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+a = document.getElementById("a");
+context = a.getContext("2d");
+context.fillStyle = "white";
+context.beginPath();
+context.arc(55, 130, 40, 0, 2*Math.PI);
+context.stroke();
+context.lineWidth = 2;
+context.beginPath();
+context.arc(55, 71, 30, 0, 2*Math.PI);
+context.stroke();
+context.lineWidth = 2.2;
+context.fill();
+context.beginPath();
+context.arc(55, 30, 20, 0, 2*Math.PI);
+context.stroke();
+context.fill();
+&lt;/script&gt;
+</pre>
+
+</body>
+</html>
